@@ -5,6 +5,7 @@
         margin: 0;
 
         box-shadow: $fancy-shadow;
+        transition: $def-trans-shadow;
 
         background: #ddd;
         border-radius: 0.3em;
@@ -20,11 +21,8 @@
 
                 display: block;
                 color: #222;
+                transition: $def-trans;
                 text-decoration: none;
-
-                &:hover {
-                    transition: $def-trans;
-                }
             }
 
             > a, > span {
@@ -49,7 +47,6 @@
 
         &:hover {
             box-shadow: $fancy-shadow-blur;
-            transition: $def-trans-shadow;
         }
     }
 }

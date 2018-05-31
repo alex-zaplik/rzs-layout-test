@@ -7,12 +7,12 @@
     margin: 0.4em 0;
     box-shadow: $fancy-shadow;
 
+    transition: $def-trans, $def-trans-color, $def-trans-shadow;
+
     &:hover {
         background: darken($color, 10%);
         color: desaturate(darken($color, 60%), 50%);
         box-shadow: $fancy-shadow-blur;
-
-        transition: $def-trans, $def-trans-color, $def-trans-shadow;
     }
 }
 

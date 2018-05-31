@@ -2,6 +2,7 @@
     width: 100%;
     background: $main-nav-bg;
     box-shadow: $fancy-shadow;
+    transition: $def-trans-shadow;
     z-index: 1;
 
     > ul {
@@ -16,12 +17,9 @@
                 padding-left: 0.5em;
 
                 color: $main-nav-color;
+                transition: $def-trans;
 
                 cursor: pointer;
-
-                &:hover {
-                    transition: $def-trans;
-                }
             }
 
             > a, span {
@@ -54,7 +52,6 @@
 
     &:hover {
         box-shadow: $fancy-shadow-blur;
-        transition: $def-trans-shadow;
     }
 }
 

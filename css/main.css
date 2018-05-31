@@ -58,6 +58,7 @@ pre {
   width: 100%;
   background: #444;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+  transition: 150ms ease-in-out box-shadow;
   z-index: 1; }
   .main-nav > ul {
     display: flex;
@@ -68,9 +69,8 @@ pre {
       padding-right: 0.5em;
       padding-left: 0.5em;
       color: #fff;
+      transition: 150ms ease-in-out background-color;
       cursor: pointer; }
-      .main-nav > ul > li a:hover, .main-nav > ul > li span:hover {
-        transition: 150ms ease-in-out background-color; }
     .main-nav > ul > li > a, .main-nav > ul > li span {
       color: #fff; }
       .main-nav > ul > li > a:hover, .main-nav > ul > li span:hover {
@@ -86,8 +86,7 @@ pre {
         padding-left: 0.5em;
         margin-left: -0.5em; }
   .main-nav:hover {
-    box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.2), 0 1px 10px 1px rgba(0, 0, 0, 0.14), 0 2px 5px -1px rgba(0, 0, 0, 0.12);
-    transition: 150ms ease-in-out box-shadow; }
+    box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.2), 0 1px 10px 1px rgba(0, 0, 0, 0.14), 0 2px 5px -1px rgba(0, 0, 0, 0.12); }
 
 .fixed {
   position: fixed;
@@ -105,36 +104,36 @@ article {
     border-radius: 0.3em;
     padding: 0.6em 0.6em;
     margin: 0.4em 0;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12); }
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+    transition: 150ms ease-in-out background-color, 150ms ease-in-out color, 150ms ease-in-out box-shadow; }
     article .error:hover {
       background: #fc4040;
       color: #2d1010;
-      box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.2), 0 1px 10px 1px rgba(0, 0, 0, 0.14), 0 2px 5px -1px rgba(0, 0, 0, 0.12);
-      transition: 150ms ease-in-out background-color, 150ms ease-in-out color, 150ms ease-in-out box-shadow; }
+      box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.2), 0 1px 10px 1px rgba(0, 0, 0, 0.14), 0 2px 5px -1px rgba(0, 0, 0, 0.12); }
   article .warrning {
     background: #ffe15c;
     color: #615315;
     border-radius: 0.3em;
     padding: 0.6em 0.6em;
     margin: 0.4em 0;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12); }
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+    transition: 150ms ease-in-out background-color, 150ms ease-in-out color, 150ms ease-in-out box-shadow; }
     article .warrning:hover {
       background: #ffd829;
       color: #1f1b0a;
-      box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.2), 0 1px 10px 1px rgba(0, 0, 0, 0.14), 0 2px 5px -1px rgba(0, 0, 0, 0.12);
-      transition: 150ms ease-in-out background-color, 150ms ease-in-out color, 150ms ease-in-out box-shadow; }
+      box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.2), 0 1px 10px 1px rgba(0, 0, 0, 0.14), 0 2px 5px -1px rgba(0, 0, 0, 0.12); }
   article .confirmation {
     background: #64ff64;
     color: #166816;
     border-radius: 0.3em;
     padding: 0.6em 0.6em;
     margin: 0.4em 0;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12); }
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+    transition: 150ms ease-in-out background-color, 150ms ease-in-out color, 150ms ease-in-out box-shadow; }
     article .confirmation:hover {
       background: #31ff31;
       color: #0c250c;
-      box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.2), 0 1px 10px 1px rgba(0, 0, 0, 0.14), 0 2px 5px -1px rgba(0, 0, 0, 0.12);
-      transition: 150ms ease-in-out background-color, 150ms ease-in-out color, 150ms ease-in-out box-shadow; }
+      box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.2), 0 1px 10px 1px rgba(0, 0, 0, 0.14), 0 2px 5px -1px rgba(0, 0, 0, 0.12); }
   article .acc {
     background: #999;
     color: #262626;
@@ -142,13 +141,13 @@ article {
     padding: 0 0;
     margin: 0.4em 0;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+    transition: 150ms ease-in-out background-color, 150ms ease-in-out color, 150ms ease-in-out box-shadow;
     cursor: pointer;
     padding-bottom: 1px; }
     article .acc:hover {
       background: gray;
       color: black;
-      box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.2), 0 1px 10px 1px rgba(0, 0, 0, 0.14), 0 2px 5px -1px rgba(0, 0, 0, 0.12);
-      transition: 150ms ease-in-out background-color, 150ms ease-in-out color, 150ms ease-in-out box-shadow; }
+      box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.2), 0 1px 10px 1px rgba(0, 0, 0, 0.14), 0 2px 5px -1px rgba(0, 0, 0, 0.12); }
     article .acc h3 {
       margin: 0;
       padding: 0.5em; }
@@ -166,6 +165,7 @@ article {
   .side-nav > ul {
     margin: 0;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+    transition: 150ms ease-in-out box-shadow;
     background: #ddd;
     border-radius: 0.3em;
     margin-right: 0.8em;
@@ -176,9 +176,8 @@ article {
       cursor: pointer;
       display: block;
       color: #222;
+      transition: 150ms ease-in-out background-color;
       text-decoration: none; }
-      .side-nav > ul > li a:hover, .side-nav > ul > li span:hover {
-        transition: 150ms ease-in-out background-color; }
     .side-nav > ul > li > a:hover, .side-nav > ul > li > span:hover {
       background: #eaeaea; }
     .side-nav > ul > li > ul {
@@ -189,7 +188,6 @@ article {
         .side-nav > ul > li > ul a:hover {
           background: #fff; }
     .side-nav > ul:hover {
-      box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.2), 0 1px 10px 1px rgba(0, 0, 0, 0.14), 0 2px 5px -1px rgba(0, 0, 0, 0.12);
-      transition: 150ms ease-in-out box-shadow; }
+      box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.2), 0 1px 10px 1px rgba(0, 0, 0, 0.14), 0 2px 5px -1px rgba(0, 0, 0, 0.12); }
 
 /*# sourceMappingURL=main.css.map */
