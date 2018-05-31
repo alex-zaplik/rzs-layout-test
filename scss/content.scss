@@ -1,0 +1,11 @@
+.content {
+    display: grid;
+
+    $menu-column-width: 100% / 6;
+    $article-column-width: 100% - $menu-column-width;
+
+    grid-template-columns: $menu-column-width $article-column-width;
+}
+
+@import "content/article";
+@import "content/side-menu";

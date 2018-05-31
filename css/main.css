@@ -1,0 +1,195 @@
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold; }
+
+h1 {
+  font-size: 2em;
+  line-height: 1.5em;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em; }
+
+h2 {
+  font-size: 1.5em;
+  line-height: 1em;
+  margin-top: 0.3333333333em;
+  margin-bottom: 0.3333333333em; }
+
+h3 {
+  font-size: 1.1em;
+  line-height: 1.3636363636em;
+  margin-top: 0.4545454545em;
+  margin-bottom: 0.4545454545em; }
+
+h4, h5, h6 {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em; }
+
+p, label, ul {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em; }
+
+.main-nav li a, .main-nav li span {
+  font-size: 1em;
+  line-height: 1.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em; }
+
+.main-nav ul {
+  margin: 0; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  padding: 0; }
+
+header, .content, .main-nav > ul {
+  max-width: 1080px;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif; }
+
+pre {
+  font-family: "Courier New", Courier, monospace; }
+
+.main-nav {
+  width: 100%;
+  background: #444;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+  z-index: 1; }
+  .main-nav > ul {
+    display: flex;
+    flex-direction: row; }
+    .main-nav > ul > li a, .main-nav > ul > li span {
+      display: block;
+      text-decoration: none;
+      padding-right: 0.5em;
+      padding-left: 0.5em;
+      color: #fff;
+      cursor: pointer; }
+      .main-nav > ul > li a:hover, .main-nav > ul > li span:hover {
+        transition: 150ms ease-in-out background-color; }
+    .main-nav > ul > li > a, .main-nav > ul > li span {
+      color: #fff; }
+      .main-nav > ul > li > a:hover, .main-nav > ul > li span:hover {
+        background: green; }
+    .main-nav > ul > li > ul {
+      position: absolute;
+      flex-direction: column;
+      background: #5e5e5e;
+      min-width: 10em; }
+    .main-nav > ul > li:first-child a, .main-nav > ul > li:first-child span {
+      padding-left: 0; }
+      .main-nav > ul > li:first-child a:hover, .main-nav > ul > li:first-child span:hover {
+        padding-left: 0.5em;
+        margin-left: -0.5em; }
+  .main-nav:hover {
+    box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.2), 0 1px 10px 1px rgba(0, 0, 0, 0.14), 0 2px 5px -1px rgba(0, 0, 0, 0.12);
+    transition: 150ms ease-in-out box-shadow; }
+
+.fixed {
+  position: fixed;
+  top: 0; }
+
+.content {
+  display: grid;
+  grid-template-columns: 16.6666666667% 83.3333333333%; }
+
+article {
+  text-align: justify; }
+  article .error {
+    background: #fd7272;
+    color: #701a1a;
+    border-radius: 0.3em;
+    padding: 0.6em 0.6em;
+    margin: 0.4em 0;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12); }
+    article .error:hover {
+      background: #fc4040;
+      color: #2d1010;
+      box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.2), 0 1px 10px 1px rgba(0, 0, 0, 0.14), 0 2px 5px -1px rgba(0, 0, 0, 0.12);
+      transition: 150ms ease-in-out background-color, 150ms ease-in-out color, 150ms ease-in-out box-shadow; }
+  article .warrning {
+    background: #ffe15c;
+    color: #615315;
+    border-radius: 0.3em;
+    padding: 0.6em 0.6em;
+    margin: 0.4em 0;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12); }
+    article .warrning:hover {
+      background: #ffd829;
+      color: #1f1b0a;
+      box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.2), 0 1px 10px 1px rgba(0, 0, 0, 0.14), 0 2px 5px -1px rgba(0, 0, 0, 0.12);
+      transition: 150ms ease-in-out background-color, 150ms ease-in-out color, 150ms ease-in-out box-shadow; }
+  article .confirmation {
+    background: #64ff64;
+    color: #166816;
+    border-radius: 0.3em;
+    padding: 0.6em 0.6em;
+    margin: 0.4em 0;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12); }
+    article .confirmation:hover {
+      background: #31ff31;
+      color: #0c250c;
+      box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.2), 0 1px 10px 1px rgba(0, 0, 0, 0.14), 0 2px 5px -1px rgba(0, 0, 0, 0.12);
+      transition: 150ms ease-in-out background-color, 150ms ease-in-out color, 150ms ease-in-out box-shadow; }
+  article .acc {
+    background: #999;
+    color: #262626;
+    border-radius: 0.3em;
+    padding: 0 0;
+    margin: 0.4em 0;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    padding-bottom: 1px; }
+    article .acc:hover {
+      background: gray;
+      color: black;
+      box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.2), 0 1px 10px 1px rgba(0, 0, 0, 0.14), 0 2px 5px -1px rgba(0, 0, 0, 0.12);
+      transition: 150ms ease-in-out background-color, 150ms ease-in-out color, 150ms ease-in-out box-shadow; }
+    article .acc h3 {
+      margin: 0;
+      padding: 0.5em; }
+    article .acc.code > pre {
+      background: #555555;
+      box-shadow: inset 0 1px 14px 0 rgba(0, 0, 0, 0.2), inset 0 1px 4px 2px rgba(0, 0, 0, 0.14), inset 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+      color: #fff;
+      padding: 0.5em;
+      margin: 0.5em; }
+  article .katex-html {
+    z-index: 0; }
+
+.side-nav {
+  margin-top: 1em; }
+  .side-nav > ul {
+    margin: 0;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+    background: #ddd;
+    border-radius: 0.3em;
+    margin-right: 0.8em;
+    padding: 0;
+    overflow: hidden; }
+    .side-nav > ul > li a, .side-nav > ul > li span {
+      padding: 0.5em 0.6em;
+      cursor: pointer;
+      display: block;
+      color: #222;
+      text-decoration: none; }
+      .side-nav > ul > li a:hover, .side-nav > ul > li span:hover {
+        transition: 150ms ease-in-out background-color; }
+    .side-nav > ul > li > a:hover, .side-nav > ul > li > span:hover {
+      background: #eaeaea; }
+    .side-nav > ul > li > ul {
+      background: #eee;
+      margin: 0; }
+      .side-nav > ul > li > ul a {
+        text-decoration: none; }
+        .side-nav > ul > li > ul a:hover {
+          background: #fff; }
+    .side-nav > ul:hover {
+      box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.2), 0 1px 10px 1px rgba(0, 0, 0, 0.14), 0 2px 5px -1px rgba(0, 0, 0, 0.12);
+      transition: 150ms ease-in-out box-shadow; }
+
+/*# sourceMappingURL=main.css.map */

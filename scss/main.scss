@@ -1,0 +1,27 @@
+@import "variables";
+@import "typography";
+
+@mixin width-center {
+    max-width: $max-width;
+    margin: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+}
+
+header, .content, .main-nav > ul {
+    @include width-center;
+    font-family: $fonts;
+}
+
+pre {
+    font-family: $code-fonts;
+}
+
+@import "main-nav";
+@import "content";

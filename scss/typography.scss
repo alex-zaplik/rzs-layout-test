@@ -1,0 +1,37 @@
+@function calcLineHeight($size) {
+    @if $size>= 1.0 {
+        $K : ceil($size / $base-line-height);
+        @return (($K * $base-line-height) / $size) * 1em;
+    } @else {
+        @return ($base-line-height / $size) * 1em;
+    }
+}
+
+@mixin fontSizeF($size, $factor) {
+    font-size: $size * 1em;
+    line-height: calcLineHeight($size);
+    margin-top: (1 / $size) * $factor * 1em;
+    margin-bottom: (1 / $size) * $factor * 1em;
+}
+
+@mixin fontSizeP($size, $factor) {
+    font-size: $size * 1em;
+    line-height: calcLineHeight($size);
+    padding-top: (1 / $size) * $factor * 1em;
+    padding-bottom: (1 / $size) * $factor * 1em;
+}
+
+@mixin fontSize($size) {
+    @include fontSizeF($size, 0.5);
+}
+
+h1, h2, h3, h4, h5, h6                  { font-weight: bold }
+
+h1                                      { @include fontSize(2.0) }
+h2                                      { @include fontSize(1.5) }
+h3                                      { @include fontSize(1.1) }
+h4, h5, h6                              { @include fontSize(1.0) }
+p, label, ul                            { @include fontSize(1.0) }
+.main-nav li a, .main-nav li span       { @include fontSizeP(1.0, 0.5) }
+
+.main-nav ul                            { margin: 0; }

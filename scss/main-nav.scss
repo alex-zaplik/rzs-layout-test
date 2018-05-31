@@ -1,0 +1,64 @@
+.main-nav {
+    width: 100%;
+    background: $main-nav-bg;
+    box-shadow: $fancy-shadow;
+    z-index: 1;
+
+    > ul {
+        display: flex;
+        flex-direction: row;
+
+        > li {
+            a, span {
+                display: block;
+                text-decoration: none;
+                padding-right: 0.5em;
+                padding-left: 0.5em;
+
+                color: $main-nav-color;
+
+                cursor: pointer;
+
+                &:hover {
+                    transition: $def-trans;
+                }
+            }
+
+            > a, span {
+                color: $main-nav-color;
+
+                &:hover {
+                    background: green;
+                }
+            }
+
+            > ul {
+                position: absolute;
+                flex-direction: column;
+                background: lighten($color: $main-nav-bg, $amount: 10%);
+                min-width: 10em;
+            }
+        }
+
+        > li:first-child {
+            a, span {
+                padding-left: 0;
+
+                &:hover {
+                    padding-left: 0.5em;
+                    margin-left: -0.5em;
+                }
+            }
+        }
+    }
+
+    &:hover {
+        box-shadow: $fancy-shadow-blur;
+        transition: $def-trans-shadow;
+    }
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+}

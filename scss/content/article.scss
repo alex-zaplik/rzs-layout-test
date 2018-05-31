@@ -1,0 +1,58 @@
+@mixin color-box($color, $padd-ud, $padd-side) {
+    background: $color;
+    color: desaturate(darken($color, 45%), 35%);
+
+    border-radius: 0.3em;
+    padding: $padd-ud $padd-side;
+    margin: 0.4em 0;
+    box-shadow: $fancy-shadow;
+
+    &:hover {
+        background: darken($color, 10%);
+        color: desaturate(darken($color, 60%), 50%);
+        box-shadow: $fancy-shadow-blur;
+
+        transition: $def-trans, $def-trans-color, $def-trans-shadow;
+    }
+}
+
+article {
+    text-align: justify;
+
+    .error {
+        @include color-box($error-bg, 0.6em, 0.6em);
+    }
+
+    .warrning {
+        @include color-box($warrning-bg, 0.6em, 0.6em);
+    }
+
+    .confirmation {
+        @include color-box($confirmation-bg, 0.6em, 0.6em);
+    }
+
+    .acc {
+        @include color-box(#999, 0, 0);
+
+        h3 {
+            margin: 0;
+            padding: 0.5em;
+        }
+
+        cursor: pointer;
+
+        padding-bottom: 1px;
+
+        &.code > pre {
+            background: lighten(#555, $amount: 0);
+            box-shadow: $fancy-shadow-inset;
+            color: #fff;
+            padding: 0.5em;
+            margin: 0.5em;
+        }
+    }
+
+    .katex-html {
+        z-index: 0;
+    }
+}

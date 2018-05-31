@@ -1,0 +1,55 @@
+.side-nav {
+    margin-top: 1em;
+
+    > ul {
+        margin: 0;
+
+        box-shadow: $fancy-shadow;
+
+        background: #ddd;
+        border-radius: 0.3em;
+        margin-right: 0.8em;
+        padding: 0;
+        overflow: hidden;
+
+        > li {
+            a, span {
+                padding: 0.5em 0.6em;
+
+                cursor: pointer;
+
+                display: block;
+                color: #222;
+                text-decoration: none;
+
+                &:hover {
+                    transition: $def-trans;
+                }
+            }
+
+            > a, > span {
+                &:hover {
+                    background: #eaeaea;
+                }
+            }
+
+            > ul {
+                background: #eee;
+                margin: 0;
+
+                a {
+                    text-decoration: none;
+
+                    &:hover {
+                        background: #fff;
+                    }
+                }
+            }
+        }
+
+        &:hover {
+            box-shadow: $fancy-shadow-blur;
+            transition: $def-trans-shadow;
+        }
+    }
+}
