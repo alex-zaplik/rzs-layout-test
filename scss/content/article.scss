@@ -37,9 +37,9 @@ article {
         h3 {
             margin: 0;
             padding: 0.5em;
+            user-select: none;
+            cursor: pointer;
         }
-
-        cursor: pointer;
 
         padding-bottom: 1px;
 

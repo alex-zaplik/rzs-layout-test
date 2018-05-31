@@ -4,6 +4,7 @@
     box-shadow: $fancy-shadow;
     transition: $def-trans-shadow;
     z-index: 1;
+    user-select: none;
 
     > ul {
         display: flex;
